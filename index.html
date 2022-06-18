@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Simple Form</h1>
+    <form action="#" class='form'>
+        <div class="input-group">
+            <label for="email">Ваше имя</label>
+            <input type="email" name='email' id='email' required>
+            <span class="input__error" id='email-error'></span>
+        </div>
+        <div class="input-group">
+            <label for="password">Ваш пароль</label>
+            <input type="password" name='password' id='password' required>
+            <span class="input__error" id='password-error'></span>
+        </div>
+        <button type='submit' id='submit'>Отправить</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

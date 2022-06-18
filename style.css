@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;500;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.form {
+	display: flex;
+	width: 400px;
+	flex-direction: column;
+}
+.input-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+	position: relative;
+}
+h1 {
+	margin-bottom: 30px;
+	font-weight: 800;
+	font-size: 2.5rem;
+}
+label {
+	font-size: 1.3rem;
+	margin-bottom: 20px;
+}
+input {
+	padding: 8px 15px;
+	font-size: 1.5rem;
+	border: 2px solid rgb(73, 73, 73);
+	border-radius: 8px;
+}
+.input__error {
+	position: absolute;
+	bottom: -23px;
+	color: #ff4646;
+	font-weight: 400;
+	text-transform: lowercase;
+	opacity: 0;
+	transform: translateX(20px);
+	transition: all .3s ease;
+}
+
+button {
+	width: 200px;
+	padding: 15px;
+	margin-left: calc(100% - 200px);
+	background-color: #fff;
+	border: 3px solid #B4EE41;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: background .3s ease;
+}
+button:hover {
+	background-color: #a8ed1e;
+	color: #fff;
+}
+.input-error-hide {
+	opacity: 1;
+	transform: translateX(0px);
+}
